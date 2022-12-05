@@ -1,0 +1,30 @@
+
+<div class="logo">
+    <!-- logo -->
+ </div> 
+ <h4>Kitchen Story</h4> 
+ <br>
+
+ <div class="tbl">
+ <table class="table table-hover">
+    <thead>
+      <tr>
+     
+        <th scope="col">Product Name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">TotalPrice</th>
+        <th scope="col">Order Date</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of items" >
+            <td>{{i.productname}}</td>
+            <td>{{i.quantity}}</td>
+            <td>{{i.totalprice}}</td>
+            <td>{{i.purchasedate}}</td>
+        </tr>
+        </tbody>
+     </table>
+     
+    </div>
+    <input type="submit" class="login btn btn-success btn-rounded" style="float: right;margin-right:50px" (click)="back()" value="Back"> 

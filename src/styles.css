@@ -1,0 +1,6 @@
+body{
+    background-color: rgb(207, 206, 206);
+    background-image: url("./assets/images/image1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}

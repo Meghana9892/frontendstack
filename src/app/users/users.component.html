@@ -1,0 +1,29 @@
+
+<div class="logo">
+    <!-- logo -->
+ </div> 
+ <h4>Kitchen Story</h4> 
+ <br>
+
+ <div class="tbl">
+ <table class="table table-hover">
+    <thead>
+      <tr>
+     
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Username</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of items" >
+            <td>{{i.firstname}}</td>
+            <td>{{i.lastname}}</td>
+            <td>{{i.username}}</td>
+        </tr>
+        </tbody>
+     </table>
+     
+    </div>
+    <input type="submit" class="login btn btn-success btn-rounded" style="float: right;margin-right:50px" (click)="back()" value="Back"> 

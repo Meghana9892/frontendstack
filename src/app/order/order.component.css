@@ -1,0 +1,19 @@
+.order
+{
+    height: 740px;
+    width: 700px;
+   
+}
+.text{
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(rgb(222, 148, 51), rgb(151, 38, 143));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+.backbtn
+{
+  margin-left: 300px;
+  margin-top: 100px;
+}

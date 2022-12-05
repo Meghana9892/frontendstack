@@ -1,0 +1,68 @@
+
+<div class="logo">
+    <!-- logo -->
+    
+ </div>
+ <h4>Kitchen Story</h4>
+ 
+ <nav class="navbar navbar-expand-lg" style="background-color: #e7a656;">
+     <div class="container-fluid">
+      
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="welcome">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="contactus">Contact us</a>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Me
+             </a>
+             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <li><a class="dropdown-item" href="password">Change password</a></li>
+               <li><a class="dropdown-item" href="purchases">Order History</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" (click)="signout()">Sign out</a></li>
+             </ul>
+           </li>
+         </ul>
+         <button type="button" class="btn btn-success backbtn" (click)="back()">Back</button>
+         <button class="btn btn-success" type="submit" style="margin-left: 10px;" (click)="viewcart()">View Cart</button>
+     
+
+         
+       </div>
+     </div>
+   </nav>
+   <br>
+   <h5>{{message}}</h5>
+<div class="row">
+    <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0" *ngFor="let i of result">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+
+              
+            </div>
+            <img src="https://thumbs.dreamstime.com/b/male-hand-lifts-to-up-glass-cloche-plate-hot-food-restaurant-smoked-time-close-140186395.jpg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">{{i.productname}}</h5>
+          
+                <h5 class="text-dark mb-0">Rs. {{i.price}}</h5>
+                
+               
+
+              </div>
+              <input type="submit" class="btn btn-success" value="Add to cart" (click)="additem(i)">
+            </div>
+          </div>
+        </div>    
+</div>
+
+
+  <router-outlet></router-outlet>

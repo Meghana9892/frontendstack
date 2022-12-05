@@ -1,0 +1,20 @@
+.tbl
+{
+    background-color: orange;
+    
+}
+th{
+    color: white;
+    background-color: rgb(151, 38, 143);
+}
+td{
+    color: aliceblue;
+}
+.logo
+{
+    background-color: aquamarine;
+    background-image: url("D:\Java\Projects\Front end stack\frontendproject1\src\assets\images\logo2.png");
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 100px;
+}
